@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+       
     </style>
 </head>
 <body>
@@ -47,9 +47,9 @@
         </ul >
         </div>
     </section>
-    <section>
+    <section class="what-we-do">
         <div class="container">
-        <h2 class="what-we-do">Чем мы занимаемся</h2>
+        <h2 class="what-we-do-title">Чем мы занимаемся</h2>
         <ul class="none-style what-we-do-block">
             <li class="what-we-do-img"><img src="./images/1.jpg" alt="руки на клавиатуре" width="370" height="294"></li>
             <li class="what-we-do-img"><img src="./images/2.jpg" alt="руки держат телефон" width="370" height="294"></li>
@@ -60,26 +60,34 @@
     <section class="section-team">
         <div class="container ">
         <h2 class="team">Наша команда</h2>
-        <ul class="none-style">
+        <ul class="none-style card-list">
             <li class="card">
                 <img class="card-photo" src="./images/4.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                <h3 class="name">Игорь Демьяненко</h3>
-                <p class="position">Product Designer</p>
+                <div class="description">
+                    <h3 class="name">Игорь Демьяненко</h3>
+                    <p class="position">Product Designer</p>
+                </div>
             </li>
             <li class="card">
                 <img class="card-photo" src="./images/5.jpg" alt="Ольга Репина" width="270" height="260">
-                <h3 class="name">Ольга Репина</h3>
-                <p class="position">Frontend Developer</p>
+                <div class="description">
+                    <h3 class="name">Ольга Репина</h3>
+                    <p class="position">Frontend Developer</p>
+                </div>
             </li>
             <li class="card">
                 <img class="card-photo" src="./images/6.jpg" alt="Николай Тарасов" width="270" height="260">
-                <h3 class="name">Николай Тарасов</h3>
-                <p class="position">Marketing</p>
+                <div class="description">
+                    <h3 class="name">Николай Тарасов</h3>
+                    <p class="position">Marketing</p>
+                </div>
             </li>
             <li class="card">
                 <img class="card-photo" src="./images/7.jpg" alt="Михаил Ермаков" width="270" height="260">
-                <h3 class="name">Михаил Ермаков</h3>
+                <div class="description">
+                    <h3 class="name">Михаил Ермаков</h3>
                 <p class="position">UI Designer</p>
+            </div>
             </li>
         </ul >   
         </div>

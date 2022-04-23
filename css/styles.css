@@ -40,9 +40,10 @@ ul,ol{
 
 .header{
     border-bottom: 1px solid #ECECEC;
-   
     
 }
+.header-item{
+    padding: 32px 0px}
 .header-list{
     display: flex;
     flex-direction: row;
@@ -81,18 +82,24 @@ ul,ol{
 .contact-list-element:not(:last-child){
     margin-left: 331px;
     margin-right: 50px;
+
+}
+.contact-list-element{
+    padding: 32px 0;
 }
 
+.portfolio{
+    padding: 94px 0;
 
-.btns{
-    margin-top: 94px;
-    margin-bottom: 50px;
+}
+.btns-ulist{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .btns-list:not(:last-child){
-    margin-right: 30px;
+    margin-right: 8px;
 
 }
 .filters-btn {
@@ -127,20 +134,7 @@ ul,ol{
 }
 
 
-.contact-links-footer{
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
 
-}
-.contact-item-footer{
-    display: block;
-    margin-bottom: 9px;
-}
-.contact-item-footer:last-child{
-    padding-bottom: 60px;
-}
 
 .contact-links:hover, .contact-links:focus{
     color: var(--hover-focus-color);
@@ -154,7 +148,7 @@ ul,ol{
     
 }
 .hero-container {
-    padding: 200px 452px;
+    padding: 200px 0;
     display: flex;
     flex-direction: column;
 
@@ -167,6 +161,9 @@ ul,ol{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 716px;
 }
 .hero-button{
     font-family: inherit;
@@ -181,12 +178,13 @@ ul,ol{
     border-radius: 4px;
     cursor: pointer;
     align-self: center;
+    padding: 10px 32px;
 }
 .hero-button:hover, .hero-button:focus{
     background-color: var(--btn-hover-focus-color);
 }
 .features-block {
-    margin: 94px 0px;
+    padding: 94px 0px;
     display: flex;
 }
 
@@ -203,8 +201,8 @@ ul,ol{
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: var(--main-text-color);
+    margin-bottom: 10px;
 }
 
 
@@ -222,6 +220,9 @@ ul,ol{
     text-decoration: none;
 }
 .what-we-do{
+    padding-bottom: 94px;
+}
+.what-we-do-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -231,8 +232,8 @@ ul,ol{
     margin-bottom: 50px;
 }
 .what-we-do-block {
-    margin-bottom: 94px;
     display: flex;
+    justify-content: center;
     
 }
 .what-we-do-img:not(:last-child){
@@ -240,6 +241,7 @@ ul,ol{
 }
 .section-team{
     background-color: var(--section-team-color);
+    padding: 94px 0;
 }
  .team{
     font-weight: 700;
@@ -249,15 +251,16 @@ ul,ol{
     letter-spacing: 0.03em;
     color: var(--main-text-color);
     margin-bottom: 50px;
-    padding-top: 94px;
+    
  }
- 
+ .card-list{
+    margin-bottom: 30px;
+ }
  .card{
      background-color: var(--white-color);
      display: inline-flex;
      flex-direction: column;
      margin-right: 30px;
-     margin-bottom: 94px;
      text-align: center;
  }
  .card:last-child{
@@ -265,7 +268,10 @@ ul,ol{
   
  }
 .card-photo{
-    margin-bottom: 30px;
+    
+}
+.description{
+    padding: 30px 0;
 }
 .name{
     font-weight: 500;
@@ -280,10 +286,11 @@ ul,ol{
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--contact-color);
-    margin-bottom: 30px;
+    
 }
 .footer{
     background-color: var(--section-hero-color);
+    padding: 60px 0;
     
 }
 .footer-logo {
@@ -294,9 +301,23 @@ ul,ol{
     letter-spacing: 0.03em;
     color: var(--white-color);
     display: block;
-    padding-top: 60px;
+    
     margin-bottom: 20px;
 }
+.contact-links-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.contact-item-footer:not(:last-child) {
+   
+    margin-bottom: 9px;
+}
+
+
 .address{
     font-style: normal;
     font-size: 14px;
@@ -313,18 +334,21 @@ ul,ol{
     
     justify-content: center;
 }
-.tile-list {
-    
-   
-    
+.tile-list {  
+    margin-bottom: 30px;
+    margin-right: 30px;
 }
 .tile-img{
-    margin-right: 30px;
+    
 }
 
 
 .tile-img:last-child{
     margin-right: 0;
+}
+.tile-description{
+    border: 1px solid #EEEEEE;
+    padding: 20px 24px;
 }
 .tile-title{
     font-weight: 700;
@@ -332,7 +356,7 @@ ul,ol{
     line-height: 2.00;
     letter-spacing: 0.06em;
     color:var(--main-text-color);
-    margin-top: 20px;
+    
 }
 .tile-paragraph{
     font-size: 16px;
@@ -340,10 +364,7 @@ ul,ol{
     letter-spacing: 0.03em;
     color: var(--contact-color);
     margin-top: 4px;
-    margin-bottom: 46px;
-    margin-right: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ECECEC ;
+    
    
 }
 .current {
