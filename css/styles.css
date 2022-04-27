@@ -183,8 +183,11 @@ ul,ol{
 .hero-button:hover, .hero-button:focus{
     background-color: var(--btn-hover-focus-color);
 }
-.features-block {
+.features{
     padding: 94px 0px;
+}
+.features-block {
+    
     display: flex;
 }
 
