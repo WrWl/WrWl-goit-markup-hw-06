@@ -73,15 +73,20 @@ ul,ol{
       
 }
 .contact-links-header {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--contact-color);
 }
+.contact-links-header:hover{
+    color: var(--hover-focus-color);
+    fill: var(--hover-focus-color);
+}
 .contact-list-element:not(:last-child){
     margin-left: 331px;
-    margin-right: 50px;
+    margin-right: 30px;
 
 }
 .contact-list-element{
@@ -144,13 +149,17 @@ ul,ol{
 }
 
 .section-hero{
-    background-color: var(--section-hero-color);
-    
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/17.jpg");
+    padding: 200px 0;
+    margin: 0 auto;
 }
 .hero-container {
-    padding: 200px 0;
+    
     display: flex;
     flex-direction: column;
+    align-self: center;
+    
 
 }
 .hero-text{
@@ -245,6 +254,7 @@ ul,ol{
 .section-team{
     background-color: var(--section-team-color);
     padding: 94px 0;
+    
 }
  .team{
     font-weight: 700;
@@ -265,6 +275,9 @@ ul,ol{
      flex-direction: column;
      margin-right: 30px;
      text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2)
  }
  .card:last-child{
      margin-right: 0;
@@ -274,7 +287,7 @@ ul,ol{
     
 }
 .description{
-    padding: 30px 0;
+    padding: 30px 0 0 ;
 }
 .name{
     font-weight: 500;
@@ -292,9 +305,14 @@ ul,ol{
     
 }
 .footer{
+    
     background-color: var(--section-hero-color);
     padding: 60px 0;
     
+}
+.footer>.container{
+    display: flex;
+    flex-direction: row;
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -340,6 +358,12 @@ ul,ol{
 .tile-list {  
     margin-bottom: 30px;
     margin-right: 30px;
+    
+}
+.tile-list:hover, .tile-list:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .tile-img{
     
@@ -371,6 +395,138 @@ ul,ol{
 }
 .current {
     color: var(--hover-focus-color);
+}
+.soc-icons-lists {
+    margin: 16px 32px 30px;
+    
+    display: flex;
+    
+    
+    
+}
+.soc-icons-list + .soc-icons-list{
+margin-left: 10px;
+
+
+
+}
+.link-soc-icons{
+width: 44px;
+height: 44px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.link-soc-icons:hover,.link-soc-icons:focus{
+background-color: #2196f3;
+border-radius: 50%;
+}
+.link-soc-icons:hover>.soc-icons,
+.link-soc-icons:focus>.soc-icons {
+    fill: #ffffff;
+}
+.soc-icons{
+fill: #AFB1B8;
+}
+.header-icons{
+    margin-right: 10px;
+}
+.features-icon-container{
+    background: #F5F4FA;
+    margin-bottom: 30px;
+}
+.features-icons{
+    padding: 25px 100px;
+}
+.clients{
+    padding: 94px 0;
+}
+.clients-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    margin-bottom: 50px;
+}
+.clients-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.clients-icons{
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8; 
+    border-radius: 4px;
+    fill: #AFB1B8;
+}
+.clients-icons:hover,.clients-icons:focus{
+fill: var(--hover-focus-color);
+border-color: var(--hover-focus-color);
+}
+.footer-social-title{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.footer-soc-icons-lists {
+    margin: 16px 32px 30px;
+
+    display: flex;
+}
+
+.footer-soc-icons-list+.footer-soc-icons-list {
+    margin-left: 10px;
+}
+
+.link-soc-icons-footer {
+    width: 44px;
+    height: 44px;
+
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.1);
+border: 1px solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-soc-icons-footer:hover,
+.link-soc-icons-footer:focus {
+    background-color: #2196f3;
+    border-radius: 50%;
+}
+
+.link-soc-icons-footer:hover>.soc-icons-footer,
+.link-soc-icons-footer:focus>.soc-icons-footer {
+    fill: #ffffff;
+}
+
+.soc-icons-footer {
+    fill: var(--white-color);
+}
+.footer-menu{
+    max-width: fit-content;
+    
+}
+.footer-soc{
+    max-width: fit-content;
+    text-align: start;
+    
+    margin-right: 70px;
+    margin-top: 12px;
+    margin-bottom: 100px;
 }
 
 
