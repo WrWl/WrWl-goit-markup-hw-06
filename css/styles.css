@@ -116,7 +116,8 @@ ul,ol{
     letter-spacing: 0.03em;
     color: var(--main-text-color);
     background: var(--section-team-color);
-    border-radius: 4px;
+    border-radius: 4px ;
+    border: 0px;
     cursor: pointer;
     padding: 6px 22px;
 }
@@ -287,7 +288,7 @@ ul,ol{
     
 }
 .description{
-    padding: 30px 0 0 ;
+    padding: 30px 0;
 }
 .name{
     font-weight: 500;
@@ -397,9 +398,9 @@ ul,ol{
     color: var(--hover-focus-color);
 }
 .soc-icons-lists {
-    margin: 16px 32px 30px;
-    
     display: flex;
+    justify-content: center;
+    margin-top: 16px;
     
     
     
@@ -436,9 +437,15 @@ fill: #AFB1B8;
 .features-icon-container{
     background: #F5F4FA;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
 }
 .features-icons{
-    padding: 25px 100px;
+    
 }
 .clients{
     padding: 94px 0;
@@ -455,18 +462,31 @@ fill: #AFB1B8;
 .clients-list{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
 }
-
-
-
-.clients-icons{
-    padding: 16px 32px;
-    border: 1px solid #AFB1B8; 
+.clients-list>.client-lists{
+    
+}
+.clients-a{
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
     border-radius: 4px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     fill: #AFB1B8;
+    
 }
-.clients-icons:hover,.clients-icons:focus{
+.clients-lists:not(:last-child)>a{
+    margin-right: 30px;
+}
+.clients-icons{
+    
+   
+}
+.clients-a:hover,.clients-a:focus{
 fill: var(--hover-focus-color);
 border-color: var(--hover-focus-color);
 }
@@ -481,7 +501,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 .footer-soc-icons-lists {
-    margin: 16px 32px 30px;
+   margin-top: 20px;
 
     display: flex;
 }
@@ -517,16 +537,12 @@ border: 1px solid ;
     fill: var(--white-color);
 }
 .footer-menu{
-    max-width: fit-content;
+    
     
 }
 .footer-soc{
-    max-width: fit-content;
-    text-align: start;
-    
-    margin-right: 70px;
     margin-top: 12px;
-    margin-bottom: 100px;
+    margin-left: 70px;
 }
 
 
