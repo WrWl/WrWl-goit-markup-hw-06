@@ -58,7 +58,7 @@ ul,ol{
 }
 .contact-list{
     display: flex;
-    flex-direction: row;
+   margin-left: auto;
 }
 .header-logo{
     font-family: 'Raleway';
@@ -80,12 +80,12 @@ ul,ol{
     letter-spacing: 0.02em;
     color: var(--contact-color);
 }
-.contact-links-header:hover{
+.contact-links-header:hover, .contact-links-header:focus {
     color: var(--hover-focus-color);
     fill: var(--hover-focus-color);
 }
 .contact-list-element:not(:last-child){
-    margin-left: 331px;
+    
     margin-right: 30px;
 
 }
@@ -95,6 +95,8 @@ ul,ol{
 
 .portfolio{
     padding: 94px 0;
+    
+    
 
 }
 .btns-ulist{
@@ -268,7 +270,8 @@ ul,ol{
     
  }
  .card-list{
-    margin-bottom: 30px;
+    
+    display: flex;
  }
  .card{
      background-color: var(--white-color);
@@ -350,15 +353,19 @@ ul,ol{
 }
 
 .tile{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
-    justify-content: center;
+   display: flex;
+flex-wrap: wrap;
+max-width: 100%;
+}
+.tile-list:nth-child(3n-1) {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
 }
 .tile-list {  
-    margin-bottom: 30px;
-    margin-right: 30px;
+    
+    
+    
     
 }
 .tile-list:hover, .tile-list:focus{
@@ -367,15 +374,22 @@ ul,ol{
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .tile-img{
+    display: block;
     
 }
 
 .tile-img:last-child{
-    margin-right: 0;
+    
 }
 .tile-description{
     border: 1px solid #EEEEEE;
-    padding: 20px 24px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+}
+.tile-description-unique{
+    border: 1px solid #EEEEEE;
+   
 }
 .tile-title{
     font-weight: 700;
@@ -420,7 +434,7 @@ justify-content: center;
 align-items: center;
 
 }
-.link-soc-icons:hover,.link-soc-icons:focus{
+.link-soc-icons:hover, .link-soc-icons:focus{
 background-color: #2196f3;
 border-radius: 50%;
 }
@@ -429,7 +443,7 @@ border-radius: 50%;
     fill: #ffffff;
 }
 .soc-icons{
-fill: #AFB1B8;
+    fill: #AFB1B8;
 }
 .header-icons{
     margin-right: 10px;
@@ -461,11 +475,9 @@ fill: #AFB1B8;
 }
 .clients-list{
     display: flex;
-    flex-direction: row;
+   
     
-}
-.clients-list>.client-lists{
-    
+  
 }
 .clients-a{
     width: 170px;
@@ -479,7 +491,7 @@ fill: #AFB1B8;
     fill: #AFB1B8;
     
 }
-.clients-lists:not(:last-child)>a{
+.clients-lists:not(:last-child){
     margin-right: 30px;
 }
 .clients-icons{
