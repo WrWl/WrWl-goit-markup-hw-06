@@ -44,20 +44,22 @@ ul,ol{
 }
 .header-item{
     padding: 32px 0px;
-    
+   
     
 }
+
     
 .current::after{
-    display:flex;
-    content: ",";
+    display: flex;
+    content: "";
     position: relative;
     width: inherit;
     height: 4px;
-    background: #2196F3;
-    border-radius: 2px; 
-    
+    border-radius: 2px;
+    background-color: #2196F3;
+    top: 28px;
 }
+
 
 
 .header-list{
@@ -95,12 +97,15 @@ ul,ol{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--contact-color);
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 .contact-links-header:hover, .contact-links-header:focus {
     color: var(--hover-focus-color);
     fill: var(--hover-focus-color);
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .contact-list-element:not(:last-child){
     
@@ -140,14 +145,17 @@ ul,ol{
     border: 0px;
     cursor: pointer;
     padding: 6px 22px;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 
 .filters-btn:hover,
 .filters-btn:focus {
     background-color: var(--hover-focus-color);
     color: var(--white-color);
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .span-logo{
     color: var(--hover-focus-color);
@@ -157,22 +165,28 @@ ul,ol{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
+    transition-property: color, ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
     color: var(--main-text-color);
 }
 
-
+.contact-links{
+    transition-property: color, ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+}
 
 
 .contact-links:hover, .contact-links:focus{
     color: var(--hover-focus-color);
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .item-link:hover, .item-link:focus{
     color: var(--hover-focus-color);
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .section-hero{
@@ -215,11 +229,13 @@ ul,ol{
     cursor: pointer;
     align-self: center;
     padding: 10px 32px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 .hero-button:hover, .hero-button:focus{
     background-color: var(--btn-hover-focus-color);
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .features{
     padding: 94px 0px;
@@ -410,6 +426,11 @@ position: relative;
 }
 .tile-list {  
     margin-bottom: 30px;  
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+
 }
 
 .tile-top-wrap{
@@ -418,8 +439,10 @@ overflow: hidden;
 }
 .tile-list:hover .tile-top-text{
     transform: translateY(0);
+    transition-property: transform;
     transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 .tile-top-text {
     position: absolute;
@@ -431,7 +454,10 @@ overflow: hidden;
     letter-spacing: 0.03em;
     height: 100%;
     transform: translatey(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
     padding:63px 24px ;
     overflow: auto;
 }
@@ -440,8 +466,7 @@ overflow: hidden;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .tile-img{
     display: block;
@@ -503,25 +528,40 @@ margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: background-color, border-radius, ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 
 }
 .link-soc-icons:hover, .link-soc-icons:focus{
     background-color: #2196f3;
     border-radius: 50%;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .link-soc-icons:hover>.soc-icons,
 .link-soc-icons:focus>.soc-icons {
     fill: #ffffff;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .soc-icons{
     fill: #AFB1B8;
+    transition-property:  fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 .header-icons{
     margin-right: 10px;
+    fill: #757575;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+
+}
+.contact-links-header:hover>.header-icons, .contact-links-header:focus>.header-icons{
+    fill: var(--hover-focus-color);
 }
 .features-icon-container{
     background: #F5F4FA;
@@ -564,6 +604,10 @@ margin-left: 10px;
     justify-content: center;
     align-items: center;
     fill: #AFB1B8;
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
     
 }
 .clients-lists:not(:last-child){
@@ -576,8 +620,7 @@ margin-left: 10px;
 .clients-a:hover,.clients-a:focus{
 fill: var(--hover-focus-color);
 border-color: var(--hover-focus-color);
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .footer-social-title{
 font-style: normal;
@@ -602,29 +645,26 @@ color: #FFFFFF;
 .link-soc-icons-footer {
     width: 44px;
     height: 44px;
-
-border-radius: 50%;
-background: rgba(255, 255, 255, 0.1);
-border: 1px solid ;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid ;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: background-color, ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 
 .link-soc-icons-footer:hover,
 .link-soc-icons-footer:focus {
     background-color: #2196f3;
-    border-radius: 50%;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
 }
 
-.link-soc-icons-footer:hover>.soc-icons-footer,
-.link-soc-icons-footer:focus>.soc-icons-footer {
-    fill: #ffffff;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .soc-icons-footer {
     fill: var(--white-color);
@@ -667,20 +707,21 @@ border: 1px solid ;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property:fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }    
 .modal-close-btn:hover>.modal-close-icon,
 .modal-close-btn:focus>.modal-close-icon{
     fill: var(--hover-focus-color);
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
-.is-hidden{
-visibility: hidden;
-opacity:0;
-pointer-events: none;
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
 
-}
     
 
 
