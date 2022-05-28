@@ -424,6 +424,9 @@ position: relative;
     margin-right: 30px;
     
 }
+.tile-list:nth-child(n+6){
+    margin-bottom: 0;
+}
 .tile-list {  
     margin-bottom: 30px;  
     transition-property: box-shadow;
@@ -852,6 +855,7 @@ margin: -1px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -861,6 +865,7 @@ margin: -1px;
 
     .modal-subm-btn:hover , .modal-subm-btn:focus{
         background-color:var(--btn-hover-focus-color);
+        
         
     }
     .check-text{
@@ -902,7 +907,7 @@ margin: -1px;
         width: 576px;
         height: 86px;
         margin-left: 93px;
-        margin-bottom: 94px;
+        margin-bottom: 34px;
     }
 
     .distribution-field {
@@ -928,7 +933,11 @@ margin: -1px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    color: var(--white-color);
+    padding-left: 16px;
+
 }
+
 
 .button-distrib {
     width: 200px;
@@ -939,7 +948,7 @@ margin: -1px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    
+    border: 0px;
     letter-spacing: 0.06em;
     color: var(--white-color);
     background: var(--hover-focus-color);
